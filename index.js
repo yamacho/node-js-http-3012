@@ -8,7 +8,7 @@ var server = http.createServer((req, res) => {
 	res.write(req.headers['user-agent']);
 	res.end();
 });
-var port = 8000;
+let port = 8000;
 server.listen(port, () => {
   console.log('Listening on ' + port);
 });
